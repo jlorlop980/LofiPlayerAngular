@@ -1,0 +1,7 @@
+{
+  "name": "LofiPlayer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
