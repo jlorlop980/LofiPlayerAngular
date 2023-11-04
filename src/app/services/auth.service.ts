@@ -21,16 +21,6 @@ export class AuthService {
     return tokenKey;
   }
 
-  public addRol(rol: any) {
-    let rolKey = localStorage.setItem("ROL_KEY", rol);
-    return rolKey;
-  }
-
-  public seeRol() {
-    let rolKey = localStorage.getItem("ROL_KEY");
-    return rolKey;
-  }
-
   /**
    * Recuperar contraseña
    * @param email 
@@ -50,7 +40,7 @@ export class AuthService {
   /**
    * Valor de la variable de sesión
    */
-  public isAuthenticated(){    
-    return localStorage.getItem("TOKEN_KEY");
+  public isAuthenticated():boolean{    
+    return localStorage.getItem("TOKEN_KEY")?true:false;
   }
 }
